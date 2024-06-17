@@ -1,24 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: white;
     
 }
+
+:root{
+    --corBotoesH2Texto:#ffa806;
+    --arredondamentoBordas: 10px;
+    --minhafonte: "Playwrite CO", cursive;
+    
+}
+
 body{
 background-image: url(imagens/bg.png);
 /* Descomente para aplicar uma imagem sem repetição */
 /* background-repeat:no-repeat;
 background-size: cover; */
+text-align: center;
 }
 
 header{
     background-color: #1E1F22;
-    text-align: center;
+   
     padding: 15px;
+}
+nav a{
+    color: white;
+    margin: 0px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.logo{
+    width: 250px;
 }
 
 a{
     color: white;
     margin: 0px 10px;
     text-decoration: none;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+h2{
+    color: var(--corBotoesH2Texto) ;
+    text-align: center;
+   
+}
+
+.imagemProduto{
+    width: 400px;
+}
+
+.boxProduto{
+    background-color:rgba(37, 37, 37, 0.8) ;
+    width: 850px;
+    margin: auto;
+    border-radius: var(--arredondamentoBordas);
+}
+
+.boxImagem , .boxTexto{
+    display: inline-block;
+    vertical-align: middle;
+    width: 400px;
+    text-align: left;
+}
+
+h1 , h2 , h3, button{
+    margin: 10px 0px ;
+}
+
+button{
+    background-color: var(--corBotoesH2Texto);
+    padding: 15px;
+    border: none;
+    border-radius: var(--arredondamentoBordas);
+    width: 150px;
+    cursor: pointer;
 }
