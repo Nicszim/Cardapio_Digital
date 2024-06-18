@@ -80,6 +80,7 @@ h1 , h2 , h3, button{
     margin: 10px 0px ;
 }
 
+
 button{
     background-color: var(--corBotoesH2Texto);
     padding: 15px;
