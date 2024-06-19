@@ -10,7 +10,7 @@
 }
 
 :root{
-    --corBotoesH2Texto:#ffa806;
+    --corBotoesH2Texto:#FFAE00;
     --arredondamentoBordas: 10px;
     --minhafonte: "Playwrite CO", cursive;
     
@@ -88,4 +88,6 @@ button{
     border-radius: var(--arredondamentoBordas);
     width: 150px;
     cursor: pointer;
+
 }
+
