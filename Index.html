@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,27 +13,28 @@
 
 <body>
 
- <header>
+ <header class="mb-5">
 
 <img src="imagens/logo.png" alt="Logo BBQ BRO">
 <nav>
 <a href="#hamb">Hamburguer</a>
 <a href="#acomp">Acompanhamentos</a>
 <a href="#beb">Bebidas</a>
-<a href="#car" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Carrinho</a>
+<a href="#car" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><img src="imagens/carrinho.png" alt="Imagem carrinho" width="50px"></a>
 
 </nav>
     </header>
     
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="car" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="car" aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <h5 class="offcanvas-title text-dark" id="offcanvasExampleLabel">Carrinho de compras</h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
-        <div class="offcanvas-body">
+        <div class="offcanvas-body bg-light">
 
   <h2 class="text-dark ">Meu Carrinho</h2>
+
 
     <div class="justify-content-center">
 
@@ -101,6 +103,11 @@
   </div>
 </div>
 
+<div>
+<h3 class="text-dark my-2 mb-4">Total a pagar: R$150,00</h3>
+<button class="text-light btn-lg">Pagar</button>
+</div>
+
     </div>
 
 
@@ -109,12 +116,40 @@
         </div>
       </div>
     
+
+      <section id="Publicidade" class="container w-50">
+
+        <div id="carouselpublicidade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagens/publi1.jpg" class="d-block w-100 " alt="publi1" height="700">
+            </div>
+            <div class="carousel-item">
+              <img src="imagens/publi2.jpg" class="d-block w-100" alt="publi2" height="700">
+            </div>
+            <div class="carousel-item">
+              <img src="imagens/publi3.jpg" class="d-block w-100" alt="publi3" height="700">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </section>
+
+
     <main>
 
-        <h1>cardápio</h1>
+        <h1 class="mt-5">cardápio</h1>
 
         <section id="hamb"> 
-            <h2>Hamburguer</h2>
+            <h2 class="mb-4">Hamburguer</h2>
 
 
         <div class="boxProduto">
@@ -137,9 +172,28 @@
                     Perfeito para saciar sua fome!</P>
 
                     <button>Pedir</button>
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Detalhes</button>
 
             </div>
         </div>
+
+          <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="staticBackdropLabel">Mais Detalhes</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                  Completo, muito gostoso!  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-warning text-light">Entendido</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </section>
     </main>

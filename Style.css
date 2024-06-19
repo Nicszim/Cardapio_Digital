@@ -88,6 +88,7 @@ button{
     border-radius: var(--arredondamentoBordas);
     width: 150px;
     cursor: pointer;
+    --corBotoesH2Texto:#FFAE00;
 
 }
 
