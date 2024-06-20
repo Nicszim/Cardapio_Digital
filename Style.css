@@ -92,3 +92,7 @@ button{
 
 }
 
+.redondo{
+    border: none;
+    border-radius:25px
+}
