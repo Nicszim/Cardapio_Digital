@@ -17,8 +17,8 @@
 
 <img src="imagens/logo.png" alt="Logo BBQ BRO">
 <nav>
-<a href="#hamb">Hamburguer</a>
-<a href="#acomp">Acompanhamentos</a>
+<a href="#hamb">Hamburgueres</a>
+<a href="#acomp">Acompanhamento</a>
 <a href="#beb">Bebidas</a>
 <a href="#car" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><img src="imagens/carrinho.png" alt="Imagem carrinho" width="50px"></a>
 
@@ -146,10 +146,10 @@
 
     <main>
 
-        <h1 class="mt-5">cardápio</h1>
+        <h1 class="mt-5 contorno">cardápio</h1>
 
         <section id="hamb"> 
-            <h2 class="mb-4">Hamburguer</h2>
+            <h2 class="mb-4 contorno">HAMBURGUERES</h2>
 
 
         <div class="boxProduto">
@@ -176,6 +176,51 @@
 
             </div>
         </div>
+         
+        <div class="boxProduto mt-5">
+          <div class="boxImagem">
+
+              <img src="imagens/burger02.png" alt="Gourmet Burguer" class="imagemProduto">
+
+          </div>
+          <div class="boxTexto">
+
+              <h3>
+                  Gourmet Burguer - 
+                  <strong>R$35,00</strong>
+              
+              </h3>
+
+              <P>O nosso Hambúrguer Gourmet, preparado com um suculento hambúrguer de carne nobre, queijo derretido, cebola caramelizada e baccon. Uma escolha irresistível!
+              </P>
+
+                  <button>Pedir</button>
+                  <button data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Detalhes</button>
+
+          </div>
+      </div>
+      
+      <div class="boxProduto mt-5">
+        <div class="boxImagem">
+
+            <img src="imagens/burger03.png" alt="Defumado BBQ Burguer" class="imagemProduto">
+
+        </div>
+        <div class="boxTexto">
+
+            <h3>
+                Defumado BBQ Burguer - 
+                <strong>R$29,00</strong>
+            
+            </h3>
+
+            <P>Deixe-se envolver pelo sabor defumado do nosso Hambúrguer BBQ, uma deliciosa combinação de hambúrguer de carne suculenta, queijo cheddar derretido, cebola caramelizada e salada verde.</P>
+
+                <button>Pedir</button>
+                <button data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Detalhes</button>
+
+        </div>
+    </div>
 
           <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -196,6 +241,78 @@
           </div>
 
         </section>
+        
+        <section id="acomp">
+          <h2 class="mb-4 mt-5 contorno">ACOMPANHAMENTO</h2>
+          <div class="boxProduto">
+            <div class="boxImagem">
+
+                <img src="imagens/acomp01.png" alt="Acompanhamento1" class="imagemProduto">
+
+            </div>
+            <div class="boxTexto">
+
+                <h3>
+                  Batat Fritas - 
+                    <strong>R$15,00</strong>
+                
+                </h3>
+
+                <P>Nossas batatas fritas são o acompanhamento perfeito para qualquer refeição! Cortadas em palitos e fritas até ficarem douradas e crocantes por fora, e macias por dentro, elas são irresistíveis em cada mordida.
+                </P>
+
+                    <button>Pedir</button>
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Detalhes</button>
+
+            </div>
+        </div>
+<!--          
+          <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="staticBackdropLabel">Mais Detalhes</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                  Completo, muito gostoso!  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-warning text-light">Entendido</button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </section>
+
+        <section id="beb">
+          <h2 class="mb-4 mt-5 contorno">BEBIDAS</h2>
+
+          <div class="boxProduto">
+            <div class="boxImagem">
+
+                <img src="imagens/bebida01.png" alt="Bebida1" class="imagemProduto">
+
+            </div>
+            <div class="boxTexto">
+
+                <h3>
+                  Coca-Cola - 
+                    <strong>R$5,50</strong>
+                
+                </h3>
+
+                <P>Refresque-se com a clássica Coca-Cola gelada, uma bebida que encanta paladares há décadas. Com seu sabor único e inconfundível para acompanhar seu hambúrguer ou batatas fritas.</P>
+
+                    <button>Pedir</button>
+                    <button data-bs-toggle="modal" data-bs-target="#exampleModal">Ver Detalhes</button>
+
+            </div>
+        </div>
+        </section>
+
+
     </main>
 
 
